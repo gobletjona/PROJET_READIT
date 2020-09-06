@@ -4,16 +4,29 @@
 TEMPLATE PRINCIPALE
 */
  ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Template principal</h1>
-  <?php var_dump($connexion); ?>
-</body>
-</html>
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <?php include '../app/vues/template/partials/_head.php'; ?>
+   </head>
+   <body>
+
+ 	  <?php include '../app/vues/template/partials/_nav.php'; ?>
+    
+     <!-- END nav -->
+
+     <?php include '../app/vues/template/partials/_hero.php'; ?>
+
+     <?php include '../app/vues/template/partials/_main.php'; ?>
+
+     <!-- .section -->
+
+     <?php include '../app/vues/template/partials/_footer.php'; ?>
+
+   <!-- loader -->
+   <?php include '../app/vues/template/partials/_loader.php'; ?>
+
+   <?php include '../app/vues/template/partials/_script.php'; ?>
+
+   </body>
+ </html>
